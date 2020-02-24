@@ -43,6 +43,7 @@ trait JQueryStatic extends js.Object {
   def apply(html: JQuery.htmlString, attributes: JQuery.PlainObject[_]): JQuery[Element] = js.native
   def apply(html: JQuery.htmlString, ownerDocument: Document): JQuery[Element] = js.native
   def apply(selector: JQuery.Selector, context: Element | Document | JQuery[Element]): JQuery[Element] = js.native
+  def apply(selector: JQuery.Selector, context: JQuery.Selector): JQuery[Element] = js.native
   def apply(selector: JQuery.Selector): JQuery[Element] = js.native
   def apply(elements: Element | ArrayLike[Element]): JQuery[Element] = js.native
   def apply(selection: JQuery[Element]): JQuery[Element] = js.native
