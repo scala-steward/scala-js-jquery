@@ -1101,6 +1101,7 @@ object JQuery {
     var data: js.UndefOr[PlainObject[js.Any] | String] = js.undefined
     var dataFilter: js.UndefOr[js.Function2[String, String, js.Any]] = js.undefined
     var dataType: js.UndefOr[String] = js.undefined
+    var enctype: js.UndefOr[String] = js.undefined
     var error: js.UndefOr[TypeOrArray[ErrorCallback]] = js.undefined
     var global: js.UndefOr[Boolean] = js.undefined
     var headers: js.UndefOr[PlainObject[String | Null | Unit]] = js.undefined
