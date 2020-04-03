@@ -26,7 +26,10 @@ object MySettings {
         prev.filter(_ != "-Xfatal-warnings")
       else
         prev
-    }
+    },
+    scalacOptions in Compile ++= Seq(  
+      "-Ywarn-unused:imports",
+    )     
   )
 
   lazy val nonPublishingSetting = Seq(
