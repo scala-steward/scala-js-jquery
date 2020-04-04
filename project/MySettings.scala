@@ -27,9 +27,14 @@ object MySettings {
       else
         prev
     },
-    scalacOptions in Compile ++= Seq(  
-      "-Ywarn-unused:imports",
-    )     
+    scalacOptions in Compile ++= {
+      CrossVersion.partialVersion(scalaVersion.value) match {
+        case Some((2, n)) if n >= 12 => Seq(
+          "-Ywarn-unused:imports",
+        )
+        case _ => Nil
+      }
+    },
   )
 
   lazy val nonPublishingSetting = Seq(
