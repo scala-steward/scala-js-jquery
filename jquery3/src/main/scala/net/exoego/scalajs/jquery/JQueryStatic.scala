@@ -2,7 +2,7 @@ package net.exoego.scalajs.jquery
 
 import org.scalajs.dom.{ Node, Window }
 import org.scalajs.dom.html.{ Document, Element }
-import org.scalajs.dom.raw.{ HTMLElement, HTMLSelectElement }
+import org.scalajs.dom.raw.HTMLSelectElement
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSImport
