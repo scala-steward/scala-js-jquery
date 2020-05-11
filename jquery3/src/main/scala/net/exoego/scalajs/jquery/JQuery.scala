@@ -1153,7 +1153,7 @@ object JQuery {
   }
 
   @js.native
-  trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] {
+  trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Object {
 
     def always(alwaysCallback: TypeOrArray[Deferred.CallbackBase[TR | TJ, UR | UJ, VR | VJ, SR | SJ]], alwaysCallbacks: TypeOrArray[Deferred.CallbackBase[TR | TJ, UR | UJ, VR | VJ, SR | SJ]]*): this.type = js.native
 
