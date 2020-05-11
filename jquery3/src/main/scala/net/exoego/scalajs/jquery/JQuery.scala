@@ -275,8 +275,8 @@ trait JQuery[TElement] extends js.Iterable[TElement] {
   def filter(function: js.ThisFunction0[TElement, Boolean]): this.type = js.native
   def filter(selection: JQuery[Element]): this.type = js.native
 
-  def find(selector: JQuery.Selector): this.type = js.native
-  def find(element: Element): this.type = js.native
+  def find[E <: Element](selector: JQuery.Selector): JQuery[E] = js.native
+  def find[E <: Element](element: Element): JQuery[E] = js.native
   def find(element: JQuery[Element]): this.type = js.native
 
   def finish(): this.type = js.native
