@@ -1,9 +1,6 @@
 scala-js-jquery
 ===============
 
-[![Scala.js](https://www.scala-js.org/assets/badges/scalajs-0.6.29.svg)](https://www.scala-js.org/)
-[![Scala.js](https://www.scala-js.org/assets/badges/scalajs-1.0.0.svg)](https://www.scala-js.org/)
-
 Static types for the jQuery API for [Scala.js](http://www.scala-js.org/) programs.
 
 **This library is a fork of [sjrd/scala-js-jquery](https://github.com/sjrd/scala-js-jquery) to maintain for newer Scala.js and jQuery**.
@@ -13,10 +10,12 @@ Usage
 
 ## For jQuery 3 (recommended)
 
+Currently, jQuery 3.5.1 is supported.
+
 Add the following to your sbt build definition:
 
 ```scala
-libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "1.0.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "2.0.0"
 ```
 
 Enjoy types in Scala file:
@@ -29,7 +28,7 @@ jQuery("button".on("click", () => println("hello world"))
     
 This aritifcat is built and published for 
 
-* Scala.js 0.6.32 and later, and Scala.js 1.0.0
+* Scala.js 0.6.33 and later, and Scala.js 1.0.0
 * with Scala 2.11, 2.12, 2.13
 * for [jQuery 3.4.1 based on this TypeScript definition and manually tweaked](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/b0503ac10547e9e087febf36e83c600a62c444bb/types/jquery)
 
@@ -51,7 +50,7 @@ But you should expect some minor rewrites, since
 Add the following to your sbt build definition:
 
 ```scala
-libraryDependencies += "net.exoego" %%% "scalajs-jquery3-compat" % "1.0.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery3-compat" % "2.0.0"
 ```
 
 You may use type aliases in `org.scalajs.jquery`:
@@ -71,7 +70,7 @@ This is a drop-in replacement for original `"be.doeraene" %%% "scalajs-jquery" %
 Add the following to your sbt build definition:
 
 ```scala
-libraryDependencies += "net.exoego" %%% "scalajs-jquery2" % "1.0.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery2" % "2.0.0"
 ```
 
 Enjoy types in Scala file:
@@ -85,7 +84,7 @@ jQuery("button".on("click", () => println("hello world"))
 then enjoy the types available in `org.scalajs.jquery`.
 
 This aritifcat is built and published for Scala.js 0.6.29 and later,
-and Scala.js 1.0.0-M8, with Scala 2.11, 2.12, 2.13. It will
+and Scala.js 1.0.0, with Scala 2.11, 2.12, 2.13. It will
 likely be published as is for later versions of Scala and Scala.js as
 well.
 
@@ -99,7 +98,7 @@ If you want to use Scala.js Bundler (sbt plugin must be enabled in `project/plug
 ```scala
 enablePlugins(ScalaJSBundlerPlugin)
 
-libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "1.0.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "2.0.0"
 
 npmDependencies in Compile ++= Seq(
   "jquery" -> "3.4.1"
