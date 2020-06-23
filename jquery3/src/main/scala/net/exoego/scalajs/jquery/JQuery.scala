@@ -844,6 +844,9 @@ trait JQuery[TElement] extends js.Iterable[TElement] {
 
   @JSBracketAccess
   def update(n: Int, v: TElement): Unit = js.native
+
+  def even(): this.type = js.native
+  def odd(): this.type = js.native
 }
 
 
