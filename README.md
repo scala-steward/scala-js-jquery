@@ -63,6 +63,8 @@ jQuery("button".on("click", () => println("hello world"))
     
 ## For jQuery 1/2
 
+*** jQuery 1/2 support was removed. Consider upgrading to jQuery 3/4 or remove jQuery. ***
+
 This is a drop-in replacement for original `"be.doeraene" %%% "scalajs-jquery" % "0.9.5"` artifact.
 
 **Caution: Sources of `scalajs-jquery2` are just copy of [sjrd/scala-js-jquery](https://github.com/sjrd/scala-js-jquery) and published for newer Scala.js & Scala. [The actual supported jQuery version is unknown](https://github.com/sjrd/scala-js-jquery/issues/1#issuecomment-33003326). It is unlikely to update type facade for this artifact by me (contribution are welcome).**
@@ -70,7 +72,7 @@ This is a drop-in replacement for original `"be.doeraene" %%% "scalajs-jquery" %
 Add the following to your sbt build definition:
 
 ```scala
-libraryDependencies += "net.exoego" %%% "scalajs-jquery2" % "2.0.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery2" % "2.0.0" // Final version. Consider upgrading to jQuery 3/4 or remove jQuery. 
 ```
 
 Enjoy types in Scala file:
