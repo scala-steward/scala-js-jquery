@@ -2,6 +2,7 @@ import sbt._
 import sbt.Keys._
 
 lazy val root = project.in(file("."))
+  .settings(name := "scalajs-jquery")
   .aggregate(jquery3, jquery3Compat)
   .settings(MySettings.commonSettings)
   .settings(MySettings.publishingSettings)
