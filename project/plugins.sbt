@@ -3,5 +3,5 @@ val scalaJSVersion =
 
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % scalaJSVersion)
 addSbtPlugin("com.dwijnand" % "sbt-travisci" % "1.2.0")
-addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "3.9.3")
+addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "3.9.4")
 addSbtPlugin("com.jsuereth" % "sbt-pgp" % "2.0.1")
