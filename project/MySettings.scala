@@ -10,7 +10,7 @@ object MySettings {
   lazy val commonSettings = Seq(
     organization := "net.exoego",
     libraryDependencies ++= Def.setting(Seq(
-      "org.scala-js" %%% "scalajs-dom" % "1.0.0"
+      "org.scala-js" %%% "scalajs-dom" % "1.1.0"
     )).value,
     scalacOptions ++= {
       val scalajsOptions = if (scalaJSVersion.startsWith("0.6."))
