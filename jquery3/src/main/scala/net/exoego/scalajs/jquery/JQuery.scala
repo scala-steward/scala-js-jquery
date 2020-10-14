@@ -1302,6 +1302,7 @@ object JQuery {
     var changedTouches: js.UndefOr[TouchList] = js.native
     var char: js.UndefOr[String] = js.native
     var charCode: js.UndefOr[Double] = js.native
+    var code: js.UndefOr[String] = js.native
     var clientX: js.UndefOr[Double] = js.native
     var clientY: js.UndefOr[Double] = js.native
     var ctrlKey: js.UndefOr[Boolean] = js.native
