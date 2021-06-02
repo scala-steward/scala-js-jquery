@@ -11,7 +11,7 @@ pull_request_rules:
 
   - name: Automatic merge on approval if dependabot
     conditions:
-      - "author=dependabot"
+      - "author~=^dependabot"
       - "#check-success>=4"
     actions:
       merge:
