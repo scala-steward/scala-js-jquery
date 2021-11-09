@@ -1,9 +1,8 @@
 package net.exoego.scalajs
 
 import net.exoego.scalajs.jquery.JQuery.{ Ajax, PlainObject }
-import org.scalajs.dom.{ DocumentFragment, Node }
+import org.scalajs.dom.{ DocumentFragment, DOMList, Node }
 import org.scalajs.dom.html.Element
-import org.scalajs.dom.raw.DOMList
 
 import scala.scalajs.js
 import scala.scalajs.js.|
