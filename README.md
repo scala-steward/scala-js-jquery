@@ -10,12 +10,12 @@ Usage
 
 ## For jQuery 3 (recommended)
 
-Currently, jQuery 3.5.1 is supported.
+Currently, jQuery 3.5.1 and above is supported.
 
 Add the following to your sbt build definition:
 
 ```scala
-libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "2.1.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "2.2.0"
 ```
 
 Enjoy types in Scala file:
@@ -50,7 +50,7 @@ But you should expect some minor rewrites, since
 Add the following to your sbt build definition:
 
 ```scala
-libraryDependencies += "net.exoego" %%% "scalajs-jquery3-compat" % "2.1.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery3-compat" % "2.2.0"
 ```
 
 You may use type aliases in `org.scalajs.jquery`:
@@ -100,7 +100,7 @@ If you want to use Scala.js Bundler (sbt plugin must be enabled in `project/plug
 ```scala
 enablePlugins(ScalaJSBundlerPlugin)
 
-libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "2.1.0"
+libraryDependencies += "net.exoego" %%% "scalajs-jquery3" % "2.2.0"
 
 npmDependencies in Compile ++= Seq(
   "jquery" -> "3.5.0"
