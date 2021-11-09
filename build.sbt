@@ -1,6 +1,14 @@
 import sbt._
 import sbt.Keys._
 
+scalaVersion := "2.13.7"
+crossScalaVersions := Seq(
+  "3.0.2",
+  "2.13.7",
+  "2.12.15",
+  "2.11.12"
+)
+
 lazy val root = project.in(file("."))
   .settings(name := "scalajs-jquery")
   .aggregate(jquery3, jquery3Compat)

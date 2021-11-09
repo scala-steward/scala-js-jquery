@@ -28,8 +28,8 @@ jQuery("button".on("click", () => println("hello world"))
     
 This aritifcat is built and published for 
 
-* Scala.js 0.6.33 and later, and Scala.js 1.0.0
-* with Scala 2.11, 2.12, 2.13
+* Scala.js 1.0.0 and later
+* with Scala 2.11, 2.12, 2.13, 3.x
 * for [jQuery 3.4.1 based on this TypeScript definition and manually tweaked](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/b0503ac10547e9e087febf36e83c600a62c444bb/types/jquery)
 
 It will likely be published as is for later versions of Scala and Scala.js as
@@ -45,7 +45,7 @@ It  will allow you to update type facade to jQuery 3 with minimum code change.
 But you should expect some minor rewrites, since 
 
 * Original `org.scalajs.jquery` offers non strict types for jQuery 1/2.
-* `net.exoego.scalajs.jquery` offers stricter types are for jQuery 3.
+* `net.exoego.scalajs.jquery` offers stricter types for jQuery 3.
 
 Add the following to your sbt build definition:
 
