@@ -8,7 +8,7 @@ import xerial.sbt.Sonatype.SonatypeKeys
 object MySettings {
 
   lazy val scala213 = "2.13.7"
-  lazy val scala212 = "2.12.15"
+  lazy val scala212 = "2.12.16"
   lazy val scala211 = "2.11.12"
 
   lazy val commonSettings = Seq(
@@ -16,7 +16,7 @@ object MySettings {
     scalaVersion := scala213,
     organization := "net.exoego",
     libraryDependencies ++= Def.setting(Seq(
-      "org.scala-js" %%% "scalajs-dom" % "2.1.0"
+      "org.scala-js" %%% "scalajs-dom" % "2.2.0"
     )).value,
     scalacOptions ++= {
       val scalajsOptions = if (scalaJSVersion.startsWith("0.6."))
