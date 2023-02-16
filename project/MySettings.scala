@@ -16,7 +16,7 @@ object MySettings {
     scalaVersion := scala213,
     organization := "net.exoego",
     libraryDependencies ++= Def.setting(Seq(
-      "org.scala-js" %%% "scalajs-dom" % "2.3.0"
+      "org.scala-js" %%% "scalajs-dom" % "2.4.0"
     )).value,
     scalacOptions ++= {
       val scalajsOptions = if (scalaJSVersion.startsWith("0.6."))
