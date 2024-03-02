@@ -8,7 +8,7 @@ import xerial.sbt.Sonatype.SonatypeKeys
 object MySettings {
 
   lazy val scala213 = "2.13.13"
-  lazy val scala212 = "2.12.18"
+  lazy val scala212 = "2.12.19"
   lazy val scala211 = "2.11.12"
 
   lazy val commonSettings = Seq(
